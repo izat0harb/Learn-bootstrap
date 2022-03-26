@@ -1,0 +1,297 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- icons from bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <!-- start navbar  -->
+    <!-- القائمة الرئيسية وكلاساتها  -->
+    <!-- md اختفاء العناصر عند منطقة متوسطة 
+        lg اختفاء العناصر عند النقطة او الحجم الاكبر
+        sm الحجم الاصغر 
+    -->
+    <div class="navbar navbar-expand-md bg-dark navbar-dark text-white fixed-top">
+        <!-- كلاسس لوضع العناصر في المنتصف  -->
+        <div class="container">
+            <!-- كلاس اللوغو ممكن وضع الصورة  -->
+            <a href="#" class="navbar-brand">Bootstrap Tutorial</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu">
+                    <!-- سبان menu ico = -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- collapse للدمج  -->
+            <div class="collapse navbar-collapse" id="mainmenu">
+                <!-- ms-auto margin:auto -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#hero" class="nav-link">Get Started</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#features" class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#learn" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Learn</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#learn-bootstrap" class="dropdown-item">Learn bootstrap</a>
+                            </li>
+                            <li>
+                                <a href="#Where-to-go-next" class="dropdown-item">Where-to-go-next</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="#faq" class="nav-link">Ask Me</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End navbar  -->
+    <!-- Start Hero  -->
+    <!-- Home -->
+    <!-- text-center : وضع العناصر في المنتصف 
+        text-sm-start : وضع العناصر في الشاشات الصغيرة
+    
+    -->
+    <!-- py : padding t+b (Y) // l+r(X) only 1,2,3,4,5 -->
+
+    <section id="hero" class="bg-dark text-light text-center text-sm-start py-5">
+        <div class="container">
+            <!-- d-flex : display:flex 
+            d-sm-flex :  من بعد السمول عميل فليكس بسس قبلا لا تعمل فليكس وخلي العناصر بلوك تحت بعضها -->
+            <div class="d-sm-flex align-items-center justify-content-center">
+                <div>
+                    <!-- text-primary : لون أساسي 
+                    components/alerts/ : من هون في كذا كلاس وكذا لون 
+                    display-5 :  حجم خط 
+                    lead : نوع خط جميل -->
+                    <h1 class="display-5">Learn <span class="text-info">Bootstrap</span> </h1>
+                    <p class="py-1 lead "> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad obcaecati quasi eos earum! Nobis reiciendis explicabo minima quam alias mollitia nisi vel aliquam nihil, dolor ab quidem veniam. Porro inventore nobis reprehenderit! Corporis
+                        aut libero adipisci ad fugit totam iure?</p>
+                    <button class="btn btn-info">Get Started</button>
+                </div>
+                <!-- 
+                    d-sm-block d-none 
+                    sm : فقط من بعد السمول أظهر الصورة -->
+                <img class="img-fluid w-50 py-5  d-sm-block d-none" src="./image/Hero-svg.svg" alt="">
+            </div>
+
+
+        </div>
+
+    </section>
+    <!-- End Hero  -->
+
+
+    <!-- نظام ال Grid -->
+
+    <!-- Start Services -->
+    <section class="py-5" id="features">
+        <div class="container">
+            <h2 class="text-center my-5">Features</h2>
+            <!-- صف  -->
+            <div class="row text-center ">
+                <!-- col العامود  -->
+                <div class="col-md-12 col-lg-4">
+                    <!-- card بطاقة -->
+                    <div class="card bg-dark text-light mb-3">
+                        <!-- صورة أعلا البطاقة 
+                            موقع lorem pecsum 
+                        -->
+                        <div class="mt-5 h1">
+                            <i class="bi bi-arrows-angle-contract"></i>
+                        </div>
+                        <!-- <img src="https://picsum.photos/300/200" alt="" class="card-img-top"> -->
+
+                        <!-- card-body : جسم البطاقة  -->
+                        <div class="card-body text-center py-5">
+                            <!-- عنوان البطاقة  -->
+                            <h2 class="card-title text-info  ">Responsive</h2>
+                            <!-- نص داخل البطاقة -->
+                            <p class="card-text lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis aspernatur sed delectus natus quibusdam. Quam.</p>
+                            <a href="#" class="btn btn-info  ">Learn More</a>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm ">
+                    <!-- card بطاقة -->
+                    <div class="card bg-dark text-light mb-3">
+                        <!-- صورة أعلا البطاقة 
+                            موقع lorem pecsum 
+                        -->
+                        <div class="mt-5 h1">
+                            <i class="bi bi-bounding-box"></i>
+                        </div>
+                        <!-- <img src="https://picsum.photos/300/200" alt="" class="card-img-top"> -->
+
+                        <!-- card-body : جسم البطاقة  -->
+                        <div class="card-body text-center py-5">
+                            <!-- عنوان البطاقة  -->
+                            <h2 class="card-title text-info  ">Easy Styling</h2>
+                            <!-- نص داخل البطاقة -->
+                            <p class="card-text lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis aspernatur sed delectus natus quibusdam. Quam.</p>
+                            <a href="#" class="btn btn-info  ">Learn More</a>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm">
+                    <!-- card بطاقة -->
+                    <div class="card bg-dark text-light mb-3">
+                        <!-- صورة أعلا البطاقة 
+                            موقع lorem pecsum 
+                        -->
+                        <div class="mt-5 h1">
+                            <i class="bi bi-bricks"></i>
+                        </div>
+                        <!-- <img src="https://picsum.photos/300/200" alt="" class="card-img-top"> -->
+
+                        <!-- card-body : جسم البطاقة  -->
+                        <div class="card-body text-center py-5">
+                            <!-- عنوان البطاقة  -->
+                            <h2 class="card-title text-info  ">Fast Working</h2>
+                            <!-- نص داخل البطاقة -->
+                            <p class="card-text lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis aspernatur sed delectus natus quibusdam. Quam.</p>
+                            <a href="#" class="btn btn-info  ">Learn More</a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Services -->
+
+
+
+    <!-- قسم من عامودين  -->
+
+
+
+    <!-- Start what to learn -->
+    <section class="  py-5" id="learn-bootstrap">
+        <div class="container">
+            <div class="row  align-items-center justify-contant-center">
+                <div class="col-md">
+                    <img src="./image/learn.svg" class=" img-fluid py-3" alt="  ">
+                </div>
+                <div class="col-md">
+                    <h2>Learn to Basics </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sint cupiditate quia mollitia! Fuga at, consequatur, neque aspernatur reiciendis modi voluptatum quaerat quisquam corrupti deleniti nesciunt nihil eligendi in temporibus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repudiandae excepturi iusto. Alias ut veritatis aspernatur reprehenderit ullam consequuntur neque?</p>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+    <!-- End what to learn -->
+
+
+    <!-- Start Next -->
+    <section class="py-5 bg-dark text-light" id="Where-to-go-next">
+        <div class="container">
+            <div class="row  align-items-center justify-contant-center flex-row-reverse">
+                <div class="col-md">
+                    <img src="./image/learn.svg" class=" img-fluid py-3" alt="  ">
+                </div>
+                <div class="col-md">
+                    <h2 class="display-1">Where To Go <span class="text-danger">Next</span> </h2>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sint cupiditate quia mollitia! Fuga at, consequatur, neque aspernatur reiciendis modi voluptatum quaerat quisquam corrupti deleniti nesciunt nihil eligendi in temporibus!</p>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repudiandae excepturi iusto. Alias ut veritatis aspernatur reprehenderit ullam consequuntur neque?</p>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+    <!-- End what to learn -->
+
+
+    <!-- Start FAQ -->
+    <section id="faq" class="py-5">
+        <div class="container">
+            <h2 class="text-center my-3">Frequently Asked Questions</h2>
+            <div class="accordion accordion-flush" id="faq-bt">
+                <div class="accordion-item">
+                    <h5 class="accordion-header" id="faq-one">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer-one">Question One</button>
+                    </h5>
+                    <div class="accordion-collapse collapse py-4 lead " data-bs-parent="#faq-bt" id="answer-one">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo sed impedit voluptatum obcaecati distinctio minus aut? Eum, at? Similique, facilis.</div>
+                </div>
+
+                <div class="accordion-item">
+                    <h5 class="accordion-header" id="faq-two">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer-two">Question two</button>
+                    </h5>
+                    <div class="accordion-collapse collapse py-4 lead " data-bs-parent="#faq-bt" id="answer-two">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo sed impedit voluptatum obcaecati distinctio minus aut? Eum, at? Similique, facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum obcaecati suscipit
+                        accusantium architecto iste fugiat possimus qui, ipsum laboriosam recusandae!
+                    </div>
+                </div>
+
+
+                <div class="accordion-item">
+                    <h5 class="accordion-header" id="faq-three">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer-three">Question three</button>
+                    </h5>
+                    <div class="accordion-collapse collapse py-4 lead " data-bs-parent="#faq-bt" id="answer-three">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo sed impedit voluptatum obcaecati distinctio minus aut? Eum, at? Similique, facilis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam aperiam qui molestiae
+                        quia tempora, architecto eligendi quos voluptatem mollitia. Earum, cumque iure. Minima, aliquam molestiae autem sapiente officia labore totam ab fuga praesentium eligendi dicta odio nostrum a! Facere, voluptas.
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- End FAQ -->
+
+    <!-- Start Fotter     -->
+
+    <footer class="py-1 text-center text-light bg-dark position-relative">
+        <div class="container">
+            <p class="lead">
+                Copyright &copy; 2021 Izat Harb
+            </p>
+            <a href="#">
+                <h2 class="bi bi-arrow-up-circle position-absolute  end-0 bottom-0 px-5"></h2>
+            </a>
+        </div>
+
+    </footer>
+    <!-- End Fotter     -->
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
